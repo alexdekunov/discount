@@ -13,9 +13,9 @@ def discounted (price, discount, max_discount=20):
         price_with_discount = price - (price * discount / 100)
     return price_with_discount
 
-print(discounted(100, 5))
-print(discounted(100, 50))
-#print(discounted(100, 5, max_discount=200))
+print(f'Возможная цена: {discounted(100, 5)}')
+print(f'Возможная цена: {discounted(100, 50)}')
+print(discounted(100, 15, max_discount=90))
 print(discounted(100, 5, max_discount=60))
 
 #product = {'name': 'Samsung', 'price': 5000, 'discount': 5}
